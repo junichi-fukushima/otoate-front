@@ -71,7 +71,7 @@ const updateScoreList = (data, currentScore) => {
 const makeQuestion = () => {
   context.answer = Math.floor(Math.random() * soundFiles.length)
   const fileName = soundFiles[context.answer]
-  elements.player.setAttribute('src', `assets/mp3/${fileName}.mp3`)
+  elements.player.setAttribute('src', `mp3/${fileName}.mp3`)
 }
 
 const checkAnswer = (ans) => {
